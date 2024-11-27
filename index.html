@@ -15,7 +15,14 @@
         max-width: 650px;
         margin: 0 auto;
         padding: 20px;
-        background: linear-gradient(to top, #dfe9f3 0%, white 100%);
+        background: radial-gradient(
+          328px at 2.9% 15%,
+          rgb(191, 224, 251) 0%,
+          rgb(232, 233, 251) 25.8%,
+          rgb(252, 239, 250) 50.8%,
+          rgb(234, 251, 251) 77.6%,
+          rgb(240, 251, 244) 100.7%
+        );
         border-radius: 15px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
         margin-top: 20px;
@@ -27,9 +34,10 @@
         border: 1px solid #f4eeff;
         border-radius: 10px;
         padding: 10px 0px;
+        border-style: outset;
       }
       h2 {
-        color: #8293db;
+        color: #657ad8;
         text-align: center;
       }
       p {
@@ -37,7 +45,7 @@
         line-height: 1.5;
       }
       strong {
-        color: #8293db;
+        color: #424874;
       }
       button {
         display: block;
@@ -51,6 +59,7 @@
         border-radius: 25px;
         cursor: pointer;
         transition: all 0.3s;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
       }
       button:hover {
         background-color: #a6b1e1;
@@ -66,16 +75,20 @@
       a {
         color: #333;
         text-decoration: none;
+        transition: all 0.2s;
       }
       a:hover {
         text-decoration: underline;
         color: #8293db;
       }
+      hr {
+        margin-top: 20px;
+      }
     </style>
   </head>
   <body>
     <div>
-      <h1>I Love Pasta</h1>
+      <h1>I Love Pasta 🍝</h1>
       <h2>You cannot go wrong with pasta!</h2>
       <p>
         There are so many different types of pasta to choose from. You can have
@@ -84,8 +97,14 @@
         <span class="butter">butter</span>. The possibilities are endless!
       </p>
       <p>
+        Pasta is a great meal to have when you are in a hurry. It is quick and
+        easy to make, and it tastes delicious. You can also add a variety of
+        ingredients to make it even more flavorful.
+      </p>
+
+      <p>
         My favorite type of pasta is spaghetti. I love how the sauce gets
-        trapped in the noodles. <strong>It's so delicious!</strong>
+        trapped in the noodles. <strong>It's so delicious!</strong> 😋
       </p>
       <img
         src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/151/531/original/pasta1.jpeg?1732690543"
@@ -95,7 +114,7 @@
       <button>What is your favorite kind of pasta?</button>
       <br />
       <hr />
-      <h2>A little bit more about pasta</h2>
+      <h2>A little bit more about pasta 🤔</h2>
       <p>
         Pasta is a type of food typically made from an unleavened dough of wheat
         flour mixed with water or eggs, and formed into sheets or other shapes,
@@ -108,8 +127,22 @@
       </p>
       <p>
         Want to know more?
-        <a href="https://en.wikipedia.org/wiki/Pasta">Click here!</a>
+        <a href="https://en.wikipedia.org/wiki/Pasta" target="_blank"
+          >Click here!</a
+        >
       </p>
     </div>
+    <script>
+      function pasta() {
+        let pasta = prompt("What is your favorite kind of pasta?");
+        if (pasta.trim() === "") {
+          alert("That pasta does not exist!🥸");
+        } else {
+          alert("You cannot go wrong with " + pasta + "!👩‍🍳");
+        }
+      }
+      button = document.querySelector("button");
+      button.addEventListener("click", pasta);
+    </script>
   </body>
 </html>
