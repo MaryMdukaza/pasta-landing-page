@@ -2,7 +2,7 @@
 I love pasta, so here is a landing page about pasta :)
 
 ## Project Overview
-This project is a simple HTML landing page dedicated to pasta. It includes information about different types of pasta, a favorite pasta section, and an interactive prompt asking users about their favorite kind of pasta.
+This project is a simple HTML landing page dedicated to pasta. It includes information about different types of pasta, a favorite pasta section, and an interactive prompt asking users about their favorite kind of pasta. You can view it here: https://marymdukaza.github.io/pasta-landing-page/
 
 ## Features
 ### Responsive Design:
