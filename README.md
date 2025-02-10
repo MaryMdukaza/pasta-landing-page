@@ -19,6 +19,3 @@ The main HTML file containing the structure and content of the landing page.
 Inline styles are used within the HTML file to style the page.
 ### script: 
 Inline script is used within the HTML file for the interactive button functionality.
-
-## Contributing
-Feel free to submit issues or pull requests if you have any suggestions or improvements.
